@@ -89,7 +89,15 @@ public class Main {
         });
         centerPanel.add(button9);
 
-        centerPanel.add(new JButton("X"));
+        JButton multiplyButton = new JButton("X");
+        multiplyButton.addActionListener(e -> {
+            String currentText = display.getText();
+            if(currentText.length() > 1) {
+                // Todo: Add multiplication logic
+            }
+        });
+        centerPanel.add(multiplyButton);
+
         centerPanel.add(new JButton("4"));
         centerPanel.add(new JButton("5"));
         centerPanel.add(new JButton("6"));
